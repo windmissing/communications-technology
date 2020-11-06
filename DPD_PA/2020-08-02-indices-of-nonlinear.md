@@ -1,10 +1,3 @@
----
-layout: post
-title:  "非线性的衡量指标"
-category: [DPD & PA]
-tags: []
----
-
 # 1 dB压缩点 1 dB compression Point 
 
 1 dB压缩点是输入功率范围内的某个值。  

@@ -1,10 +1,3 @@
----
-layout: post
-title: "PA行为模型"
-category: [DPD & PA]
-tags: []
----
-
 # 无记忆模型
 
 ## Saleh模型

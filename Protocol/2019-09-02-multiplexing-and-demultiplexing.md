@@ -1,10 +1,3 @@
----
-layout: post
-title:  "multiplexing和demultiplexing"
-category: [5G]
-tags: [MAC]
----
-
 [3GPP 5G MAC overview](http://windmissing.github.io/5g/2019-08/3gpp-5g-mac-overview.html)中提到，MAC层的功能包括multiplexing和demultiplexing.
 
 >[38.321 4.3]

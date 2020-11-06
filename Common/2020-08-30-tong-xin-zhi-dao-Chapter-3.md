@@ -1,10 +1,3 @@
----
-layout: post
-title: "《通信之道》第3章 笔记"
-category: [DPD & PA]
-tags: []
----
-
 # 连续系统 VS 离散系统
 
 连续系统以“连续时间t”为自变量：$y(t) = H\{x(t)\}$  

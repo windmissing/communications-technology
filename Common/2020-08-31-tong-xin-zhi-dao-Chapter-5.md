@@ -1,10 +1,3 @@
----
-layout: post
-title: "《通信之道》第5章 笔记"
-category: [DPD & PA]
-tags: []
----
-
 # 三角形式的傅利叶级数
 
 周期为T、角频率为$\omega = \frac{2\pi}{T}$的周期信号x(t)，如果满足狄里赫利条件(Dirichlet condition)，则可以表达成为傅利叶级数。  

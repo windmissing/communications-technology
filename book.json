@@ -18,8 +18,8 @@
     ],
     "pluginsConfig": {
         "mygitalk": {
-            "clientID": "f5101d6b2c0bc917d17e",
-            "clientSecret": "b833069c4b4664fa6cd2e35872ed0040a503988f",
+            "clientID": "4cb9e8facf9772388d8b",
+            "clientSecret": "fbebdb3281d4058177c22f9d73f230481c4fb85d",
             "repo": "communications-technology",
             "owner": "windmissing",
             "admin": ["windmissing"],

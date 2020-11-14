@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * 常识
     * [中英文术语](Common/2020-08-04-norms.md)
+    * [LTE和通信到底是什么关系](LTE.md)
     * [《通信之道》第3章 笔记](Common/2020-08-30-tong-xin-zhi-dao-Chapter-3.md)
     * [《通信之道》第5章 笔记](Common/2020-08-31-tong-xin-zhi-dao-Chapter-5.md)
 * DPD & PA

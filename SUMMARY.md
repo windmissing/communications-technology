@@ -10,6 +10,7 @@
     * [PA的非线性](DPD_PA/2020-08-01-nonlinear-of-PA.md)
     * [非线性的衡量指标](DPD_PA/2020-08-02-indices-of-nonlinear.md)
     * [PA行为模型](DPD_PA/2020-08-03-PA-behavior-model.md)
+    * [ACLR](DPD_PA/2020-11-18-ACLR.md)
 * 通信协议
     * [3GPP 5G Abbresvaitions](Protocol/2019-08-30-3gpp-5g-abbresvaitions.md)
     * [3GPP 5G MAC overview](Protocol/2019-08-30-3gpp-5g-mac-overview.md)

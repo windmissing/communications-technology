@@ -1,35 +1,3 @@
-# 无记忆模型
-
-## Saleh模型
-
-用于描述行波管功放（TWTA）  
-
-AM-AM失真曲线：  
-$$
-F(\mu) = \frac{\alpha_1\mu}{1+\beta_1\mu^2}
-$$
-
-AM-PM失真曲线：  
-$$
-F(\mu) = \frac{\alpha_2\mu^2}{1+\beta_2\mu^2}
-$$
-
-<!-- more -->
-
-## Ghorbani模型
-
-AM-AM失真曲线：  
-$$
-F(\mu) = \frac{a + \mu^b}{1+c \mu^b} + d\mu
-$$
-
-AM-PM失真曲线：  
-$$
-F(\mu) = \frac{A + \mu^B}{1+C \mu^B} + D\mu
-$$
-
-# 有记忆模型
-
 ## Volterra级数模型
 
 $$
@@ -75,21 +43,3 @@ y(n) = \sum_{q=0}^Q f_q(x(n-q))
 $$
 
 $f_q$为非线性函数  
-
-## NMA 
-
-非线性移动平均，nonlinear moving average
-
-## NARMA模型
-
-ARMA：自回归（auto regressive）移动平均  
-NARMA：非线性自回归移动平均
-
-![](http://windmissing.github.io/images/2020/11.png)  
-把一组x和一组y分别NL变换后再相加。  
-
-## Wiener模型
-
-## Hammerstein模型
-
-## Wiener-Hannerstein模型

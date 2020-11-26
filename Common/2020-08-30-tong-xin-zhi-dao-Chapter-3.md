@@ -91,10 +91,10 @@ $$
 
 $$
 \begin{aligned}
-y[n] &=& H\{x[n]\}  && 离散系统的定义  \\
-&=& H\{\sum_{k=-\infty}^\infty \chi[k]\delta[n-k]\}  &&  上文中的定义   \\
-&=& \sum_{k=-\infty}^\infty \chi[k]H\{\delta[n-k]\}  &&  线性系统的特性   \\
-&=& \sum_{k=-\infty}^\infty \chi[k]h[n-k]  &&  冲激响应函数的特性，移不变系统的特性  \\
+y[n] &=& H\{x[n]\}  && \text{离散系统的定义}  \\
+&=& H\{\sum_{k=-\infty}^\infty \chi[k]\delta[n-k]\}  &&  \text{上文中的定义}   \\
+&=& \sum_{k=-\infty}^\infty \chi[k]H\{\delta[n-k]\}  &&  \text{线性系统的特性}   \\
+&=& \sum_{k=-\infty}^\infty \chi[k]h[n-k]  &&  \text{冲激响应函数的特性和移不变系统的特性}  \\
 &=& y[n] = \chi[n] * h[n]
 \end{aligned}
 $$

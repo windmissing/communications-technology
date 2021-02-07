@@ -9,8 +9,6 @@ PA的真实输出功率为g(x)，对应图中蓝线。g(x)为输出功率为x时
 
 同理也可以定义出n dB压缩点  
 
-<!-- more -->
-
 # 三阶交调点 Third Order Intercept Point
 
 三阶交调点是输入功率范围内的某个值。    

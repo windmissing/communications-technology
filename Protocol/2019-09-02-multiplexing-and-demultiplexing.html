@@ -1,0 +1,675 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>multiplexing和demultiplexing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="windmissing">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex-plus/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2019-09-02-mapping-between-logical-channels-and-transport-channels.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"windmissing/communications-technology","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    DPD & PA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../DPD_PA/2020-08-01-nonlinear-of-PA.html">
+            
+                <a href="../DPD_PA/2020-08-01-nonlinear-of-PA.html">
+            
+                    
+                    PA的非线性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../DPD_PA/2020-08-02-indices-of-nonlinear.html">
+            
+                <a href="../DPD_PA/2020-08-02-indices-of-nonlinear.html">
+            
+                    
+                    非线性的衡量指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../DPD_PA/2020-08-03-PA-behavior-model.html">
+            
+                <a href="../DPD_PA/2020-08-03-PA-behavior-model.html">
+            
+                    
+                    PA行为模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../DPD_PA/2020-11-18-ACLR.html">
+            
+                <a href="../DPD_PA/2020-11-18-ACLR.html">
+            
+                    
+                    ACLR
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    常识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Common/2020-08-04-norms.html">
+            
+                <a href="../Common/2020-08-04-norms.html">
+            
+                    
+                    中英文术语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../LTE.md">
+            
+                <span>
+            
+                    
+                    LTE和通信到底是什么关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Common/2020-08-30-tong-xin-zhi-dao-Chapter-3.html">
+            
+                <a href="../Common/2020-08-30-tong-xin-zhi-dao-Chapter-3.html">
+            
+                    
+                    《通信之道》第3章 笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Common/2020-08-31-tong-xin-zhi-dao-Chapter-5.html">
+            
+                <a href="../Common/2020-08-31-tong-xin-zhi-dao-Chapter-5.html">
+            
+                    
+                    《通信之道》第5章 笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    通信协议
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="2019-08-30-3gpp-5g-abbresvaitions.html">
+            
+                <a href="2019-08-30-3gpp-5g-abbresvaitions.html">
+            
+                    
+                    3GPP 5G Abbresvaitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2019-08-30-3gpp-5g-mac-overview.html">
+            
+                <a href="2019-08-30-3gpp-5g-mac-overview.html">
+            
+                    
+                    3GPP 5G MAC overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="2019-09-02-mapping-between-logical-channels-and-transport-channels.html">
+            
+                <a href="2019-09-02-mapping-between-logical-channels-and-transport-channels.html">
+            
+                    
+                    MAC层逻辑信道与传输信道的映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="2019-09-02-multiplexing-and-demultiplexing.html">
+            
+                <a href="2019-09-02-multiplexing-and-demultiplexing.html">
+            
+                    
+                    multiplexing和demultiplexing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    计算机网络
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Network/HDLC.html">
+            
+                <a href="../Network/HDLC.html">
+            
+                    
+                    HDLC协议（高级数据链路控制协议）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../PPP.md">
+            
+                <span>
+            
+                    
+                    PPP（点对点协议）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Network/CSMA-CD.html">
+            
+                <a href="../Network/CSMA-CD.html">
+            
+                    
+                    CSMA/CD（多路访问/冲突检测）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Network/CSMA-CA.html">
+            
+                <a href="../Network/CSMA-CA.html">
+            
+                    
+                    CSMA/CA（多路访问/冲突避免）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Network/Protocols.html">
+            
+                <a href="../Network/Protocols.html">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >multiplexing和demultiplexing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;"><b>1. </b>&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;</a></li><li><span class="title-icon "></span><a href="#ue-multiplexing-in-ul"><b>2. </b>UE multiplexing in UL</a></li><li><span class="title-icon "></span><a href="#ue-demultiplexing-in-dl"><b>3. </b>UE demultiplexing in DL</a></li><ul><li><span class="title-icon "></span><a href="#&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;"><b>3.1. </b>&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#demultiplexing"><b>3.2. </b>demultiplexing</a></li></ul></ul></div><a href="#&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p><a href="http://windmissing.github.io/5g/2019-08/3gpp-5g-mac-overview.html" target="_blank">3GPP 5G MAC overview</a>&#x4E2D;&#x63D0;&#x5230;&#xFF0C;MAC&#x5C42;&#x7684;&#x529F;&#x80FD;&#x5305;&#x62EC;multiplexing&#x548C;demultiplexing.</p>
+<blockquote>
+<p>[38.321 4.3]
+multiplexing of MAC SDUs from one or different logicals channels onto transport blocks(TB) to be delivered to the physical layer on transport channels</p>
+</blockquote>
+<p>&#x5C06;&#x6765;&#x81EA;&#x4E00;&#x4E2A;&#x6216;&#x4E0D;&#x540C;&#x903B;&#x8F91;&#x4FE1;&#x9053;&#x7684;MAC SDU&#x590D;&#x7528;&#x5230;&#x4F20;&#x8F93;&#x5757;&#xFF08;TB&#xFF09;&#x4E0A;&#xFF0C;&#x4EE5;&#x4FBF;&#x4F20;&#x8F93;&#x5230;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x5C42;&#x3002;</p>
+<blockquote>
+<p>[38.321 4.3]
+demultiplexing of MAC SDUs to one or different logical channels from transport blocks (TB) delivered from the physical layer on transport channels&#xFF08;&#x5C06;MAC SDU&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x5C42;&#x4F20;&#x9001;&#x7684;&#x4F20;&#x8F93;&#x5757;&#xFF08;TB&#xFF09;&#x89E3;&#x590D;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x6216;&#x4E0D;&#x540C;&#x7684;&#x903B;&#x8F91;&#x4FE1;&#x9053;&#xFF09;</p>
+</blockquote>
+<p>&#x5C06;MAC SDU&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x4E0A;&#x7684;&#x7269;&#x7406;&#x5C42;&#x4F20;&#x9001;&#x7684;&#x4F20;&#x8F93;&#x5757;&#xFF08;TB&#xFF09;&#x89E3;&#x590D;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x6216;&#x4E0D;&#x540C;&#x7684;&#x903B;&#x8F91;&#x4FE1;&#x9053;</p>
+<p><img src="https://www.tech-invite.com/3m38/img/tinv-38-321-NR-MAC-arch.gif" alt=""></p>
+<!-- more -->
+<h1 id="&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;"><a name="&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4E0A;&#x884C;&#x4E0E;&#x4E0B;&#x884C;</h1>
+<p>&#x7A7A;&#x53E3;&#x534F;&#x8BAE;&#x662F;gNB&#x4E0E;UE&#x4E4B;&#x95F4;&#x4EA4;&#x4E92;&#x7684;&#x534F;&#x8BAE;&#x3002;&#x6570;&#x636E;&#x7684;&#x4EA4;&#x4E92;&#x662F;&#x53CC;&#x5411;&#x7684;&#xFF0C;&#x65E2;&#x53EF;&#x4EE5;&#x4ECE;gNB&#x6D41;&#x5411;UE&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;UE&#x6D41;&#x5411;gNB&#x3002;</p>
+<p>3GPP&#x89C4;&#x5B9A;&#x6838;&#x5FC3;&#x7F51;-&gt;gNB-&gt;UE&#x7684;&#x6570;&#x636E;&#x6D41;&#x5411;&#x4E3A;&#x4E0B;&#x884C;&#x3002;</p>
+<p><img src="../images/2019/6.png" alt="&#x4E0B;&#x884C;"></p>
+<p>&#x4E0A;&#x56FE;&#x4E3A;&#x4E0B;&#x884C;&#x65B9;&#x5411;&#xFF0C;GNB&#x628A;&#x6570;&#x636E;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x5C01;&#x88C5;&#x597D;&#x53D1;&#x7ED9;UE&#xFF0C;UE&#x6536;&#x5230;&#x6570;&#x636E;&#x540E;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x5730;&#x89E3;&#x6790;&#xFF0C;&#x6700;&#x540E;&#x8FD8;&#x539F;&#x51FA;&#x539F;&#x59CB;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x5BF9;&#x5E94;&#x5230;MAC&#x5C42;&#xFF0C;&#x4F4D;&#x4E8E;GNB&#x4FA7;&#x7684;MAC&#x5C42;&#x9700;&#x8981;&#x628A;MAC SDU multiplexing&#x5230;TB&#x3002;&#x4F4D;&#x4E8E;UE&#x4FA7;&#x7684;MAC&#x5C42;&#x5219;&#x9700;&#x8981;&#x628A;&#x628A;MAC SDU&#x4ECE;TB demultiplexing&#x51FA;&#x6765;&#x3002;</p>
+<p>3GPP&#x89C4;&#x5B9A;UE-&gt;gNB-&gt;&#x6838;&#x5FC3;&#x7F51;&#x7684;&#x6570;&#x636E;&#x6D41;&#x5411;&#x79F0;&#x4E3A;&#x4E0A;&#x884C;&#x3002;</p>
+<p><img src="../images/2019/7.png" alt="&#x4E0A;&#x884C;"></p>
+<p>&#x4E0A;&#x56FE;&#x4E3A;&#x4E0A;&#x884C;&#x65B9;&#x5411;&#xFF0C;MAC&#x5C42;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x6B63;&#x597D;&#x76F8;&#x53CD;&#x3002;GNB&#x4FA7;&#x7684;MAC&#x5C42;&#x7684;&#x5DE5;&#x4F5C;&#x662F;demultiplexing&#xFF0C;&#x800C;UE&#x4FA7;&#x7684;MAC&#x5C42;&#x7684;&#x5DE5;&#x4F5C;&#x662F;multiplexing.</p>
+<p>38.321&#x91CC;&#x53EA;&#x89C4;&#x5219;&#x4E86;UE&#x4FA7;&#x5982;&#x679C;multiplexing&#x548C;demultiplexing&#x3002;&#x800C;&#x6CA1;&#x6709;&#x89C4;&#x5B9A;GNB&#x4FA7;&#x8BE5;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x3002;&#x56E0;&#x6B64;&#x540E;&#x9762;&#x90FD;&#x662F;&#x4ECE;UE&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#x660E;multiplexing&#x548C;demultiplexing&#x7684;&#x3002;</p>
+<h1 id="ue-multiplexing-in-ul"><a name="ue-multiplexing-in-ul" class="anchor-navigation-ex-anchor" href="#ue-multiplexing-in-ul"><i class="fa fa-link" aria-hidden="true"></i></a>2. UE multiplexing in UL</h1>
+<p>&#x4ECE;&#x4E0A;&#x6587;&#x53EF;&#x77E5;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x4E0A;&#x884C;&#x65B9;&#x5411;&#xFF0C;&#x5373;UE&#x8981;&#x5411;gNB&#x53D1;&#x6570;&#x636E;&#x65F6;&#xFF0C;MAC&#x5C42;&#x624D;&#x9700;&#x8981;&#x505A;multiplexing&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p><img src="http://www.techplayon.com/wp-content/uploads/2017/09/NR-RLC-730x312.png" alt=""></p>
+<p>&#x8FD9;&#x4E2A;&#x56FE;&#x4E5F;&#x662F;&#x6765;&#x81EA;&#x7F51;&#x4E0A;&#xFF0C;&#x5FFD;&#x7565;SDAP&#x5C42;&#x548C;PDCP&#x5C42;&#x3002;&#x4EC5;&#x5173;&#x6CE8;RLC&#x5C42;&#x548C;MAC&#x5C42;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x903B;&#x8F91;&#x4FE1;&#x9053;&#x6536;&#x5230;&#x7684;&#x662F;RLC PDU&#xFF0C;&#x5373;RLC SDU + RLC header&#x3002;</p>
+<p>&#x6574;&#x4E2A;RLC PDU&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;MAC SDU&#x3002;</p>
+<p>MAC SDU + MAC sub-header&#x53C8;&#x6784;&#x6210;&#x4E86;MAC sub-PDU&#x3002;</p>
+<p>&#x5173;&#x4E8E;PDU&#x4E0E;SDU&#x89C1;[TODO]&#x3002;</p>
+<p>&#x7531;MAC SDU&#x6784;&#x6210;&#x7684;MAC sub-PDU&#x53EA;&#x662F;&#x4E00;&#x79CD;MAC sub-PDU&#x3002;&#x8FD8;&#x6709;MAC CE&#xFF08;TODO&#xFF09;&#x3001;padding&#x4E5F;&#x53EF;&#x4EE5;&#x4E0E;MAC Sub-header&#x4E00;&#x8D77;&#x6784;&#x6210;MAC sub-PDU. &#x4EE5;&#x4E0A;&#x7684;&#x8FD9;&#x4E9B;MAC sub-PDU&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x7684;&#x89C4;&#x5219;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x5C31;&#x6784;&#x6210;&#x4E86;MAC PDU&#x3002;&#x8BE6;&#x89C1;MAC PDU(TODO).</p>
+<p>&#x6700;&#x7EC8;&#x7531;PHY&#x5C42;&#x7684;TB&#x6765;&#x627F;&#x8F7D;&#x8FD9;&#x4E2A;MAC PDU&#x3002;</p>
+<h1 id="ue-demultiplexing-in-dl"><a name="ue-demultiplexing-in-dl" class="anchor-navigation-ex-anchor" href="#ue-demultiplexing-in-dl"><i class="fa fa-link" aria-hidden="true"></i></a>3. UE demultiplexing in DL</h1>
+<p>&#x4E0E;UE multiplexing in UL&#x76F8;&#x53CD;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x4E0B;&#x884C;&#x65B9;&#x5411;&#xFF0C;&#x5373;UE&#x4ECE;gNB&#x6536;&#x6570;&#x636E;&#x65F6;&#xFF0C;MAC&#x5C42;&#x624D;&#x9700;&#x8981;&#x505A;demultiplexing&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+<h2 id="&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;"><a name="&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x4ECE;&#x4F20;&#x8F93;&#x4FE1;&#x9053;&#x6536;&#x6570;&#x636E;</h2>
+<p>PHY&#x5C42;&#x4F7F;&#x7528;TB&#x6765;&#x627F;&#x8F7D;MAC&#x5C42;&#x7684;&#x6570;&#x636E;&#x3002;&#x56E0;&#x6B64;PHY&#x5C42;&#x6536;&#x5230;TB&#x540E;&#xFF0C;MAC&#x8981;&#x89E3;&#x6790;&#x8FD9;&#x4E2A;TB&#x3002;</p>
+<blockquote>
+<p>[338.321 6.1.2]<br>A MAC PDU consists of one or more MAC subPDUs. Each MAC subPDU consists of one of the following:</p>
+<ul>
+<li>A MAC subheader only (including padding);</li>
+<li>A MAC subheader and a MAC SDU;</li>
+<li>A MAC subheader and a MAC CE;</li>
+<li>A MAC subheader and padding.</li>
+</ul>
+</blockquote>
+<p>MAC&#x5C42;&#x5BF9;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;MAC sub-PDU&#x505A;&#x4E0D;&#x540C;&#x7684;&#x5904;&#x7406;&#x3002;</p>
+<p><code>A MAC subheader only</code>&#x548C;<code>A MAC subheader and padding</code>&#x5C06;&#x4F1A;&#x88AB;&#x629B;&#x5F03;&#x3002;</p>
+<p><code>A MAC subheader and a MAC CE</code>&#x5305;&#x542B;&#x4E86;MAC&#x5C42;&#x7684;&#x63A7;&#x5236;&#x4FE1;&#x606F;&#x3002;MAC&#x5C42;&#x7684;&#x64CD;&#x4F5C;&#x4E0E;MACCE&#x7684;&#x5185;&#x5BB9;&#x6709;&#x5173;&#x3002;&#x89C1;&#xFF08;TODO&#xFF09;</p>
+<p><code>A MAC subheader and a MAC SDU</code>&#x4E2D;&#x7684;MAC SDU&#x88AB;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x4EA4;&#x7ED9;&#x4E0A;&#x5C42;RLC&#x3002;</p>
+<h2 id="demultiplexing"><a name="demultiplexing" class="anchor-navigation-ex-anchor" href="#demultiplexing"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. demultiplexing</h2>
+<p>MAC&#x5C42;&#x6839;&#x636E;MAC sub-PDU&#x7684;MAC subheader&#x6765;&#x533A;&#x5206;MAC sub-PDU&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>MAC subheader&#x7684;&#x683C;&#x5F0F;&#x672C;&#x8EAB;&#x4E5F;&#x6709;&#x591A;&#x79CD;&#x3002;&#x4E0D;&#x7BA1;&#x54EA;&#x79CD;MAC subheader&#xFF0C;&#x5176;bit2 - bit7&#x90FD;&#x662F;&#x56FA;&#x5B9A;&#x7684;LCID&#x5B57;&#x6BB5;&#x3002;</p>
+<p><img src="http://windmissing.github.io/images/2019/13.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x503C;&#x4E3A;[1, 32]&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x5B83;&#x662F;MAC SDU&#x7684;subheader(&#x89C1;38.321 &#x8868;6.2.1-2)&#xFF0C;&#x4E14;LCID&#x662F;RLC PDU&#x7684;logcical channel ID. MAC&#x5C42;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x628A;MAC PDU&#x6548;&#x679C;&#x6B63;&#x786E;&#x7684;logical channel&#x3002;</p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2019-09-02-mapping-between-logical-channels-and-transport-channels.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: MAC层逻辑信道与传输信道的映射">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"multiplexing和demultiplexing","level":"1.4.4","depth":2,"next":{"title":"计算机网络","level":"1.5","depth":1,"ref":"","articles":[{"title":"HDLC协议（高级数据链路控制协议）","level":"1.5.1","depth":2,"path":"Network/HDLC.md","ref":"Network/HDLC.md","articles":[]},{"title":"PPP（点对点协议）","level":"1.5.2","depth":2,"path":"PPP.md","ref":"PPP.md","articles":[]},{"title":"CSMA/CD（多路访问/冲突检测）","level":"1.5.3","depth":2,"path":"Network/CSMA-CD.md","ref":"Network/CSMA-CD.md","articles":[]},{"title":"CSMA/CA（多路访问/冲突避免）","level":"1.5.4","depth":2,"path":"Network/CSMA-CA.md","ref":"Network/CSMA-CA.md","articles":[]},{"title":"网络协议","level":"1.5.5","depth":2,"path":"Network/Protocols.md","ref":"Network/Protocols.md","articles":[]}]},"previous":{"title":"MAC层逻辑信道与传输信道的映射","level":"1.4.3","depth":2,"path":"Protocol/2019-09-02-mapping-between-logical-channels-and-transport-channels.md","ref":"Protocol/2019-09-02-mapping-between-logical-channels-and-transport-channels.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","katex-plus","alerts","mygitalk","github","github-buttons","splitter","-sharing","sharing-plus","donate","copy-code-button","anchor-navigation-ex","sectionx","click-reveal"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/windmissing/communications-technology"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://windmissing.github.io/images/2020/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://windmissing.github.io/images/2020/weixin.jpg","wechatText":"微信打赏"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"sectionx":{},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"katex-plus":{},"alerts":{},"github-buttons":{"repo":"windmissing/communications-technology","types":["star","watch","fork"],"size":"small"},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"4cb9e8facf9772388d8b","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["windmissing"],"createIssueManually":false,"distractionFreeMode":false,"repo":"communications-technology","owner":"windmissing","enableHotKey":true,"clientSecret":"fbebdb3281d4058177c22f9d73f230481c4fb85d","pagerDirection":"last","labels":["Gitalk"]},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"windmissing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.3"},"file":{"path":"Protocol/2019-09-02-multiplexing-and-demultiplexing.md","mtime":"2021-04-30T09:10:40.276Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-30T09:12:16.943Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
